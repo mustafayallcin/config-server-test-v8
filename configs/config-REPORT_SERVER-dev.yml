@@ -1,0 +1,60 @@
+application:
+  encryption:
+    key: "{cipher}23dd92858e0723441e35fd3eaabed669db08715c6da530d7d270e58811bd854460447b9622e2f234bfbff0dbb48a3404"
+    salt: "{cipher}67f6b295d0ec036ba4f4a140e294b2e8c7292ce910f941922d629b6a1a171eca9e3deb8b2d7bfed41e13a4f05c9218e0"
+  keycloak-admin:
+    app-realm-id: "sistas"
+    app-resource-id: "chatbot"
+    app-resource-secret: "{cipher}ce01d2cefc89280e7c3b53d8ac4127b555eced2a3613d72710e466ed59910d5f134800cb4303088a09218d9c406e21de"
+    client-id: "admin-cli"
+    max-pool-size: 10
+    password: "{cipher}f07addd63327d88bdd189657805b1fcf828cd7e2f428da2d3f38de866c36fb621210f7199b92f95356695b5ee366e5a3"
+    realm: "master"
+    server-url: "https://keycloak.example.com"
+    trusted-audiences:
+    - "sistas-eva"
+    - "smart"
+    - "campus"
+    - "sistas-phone"
+    - "chatbot"
+    username: "{cipher}352a8a92b8bff6d9b502ae4617bfd8590c6c8fb68dd8ae7de728fd268b586fb0a359a5ef037d7f573ec3373232f3f17e"
+  report-management:
+    default-page-size: 50
+    export-directory: null
+    forbidden-sql-keywords:
+    - "DELETE"
+    - "DROP"
+    - "TRUNCATE"
+    - "ALTER"
+    - "UPDATE"
+    - "INSERT"
+    max-rows: 5000
+    mssql-parameter-limit: 2000
+    provider-acquire-timeout-ms: 2000
+    provider-circuit-failure-threshold: 5
+    provider-circuit-open-seconds: 5
+    provider-max-concurrent: 4
+    provider-retry-count: 1
+    provider-retry-delay-ms: 250
+    query-timeout-seconds: 60
+  report-schedule:
+    poll-interval-ms: 30000
+eureka:
+  client:
+    service-url:
+      defaultZone: "{cipher}03458a1637983087cefcb94f5669cf54175616b38e957866ce6ac9d088a0058bb98cd931716a815889c38d6670f40a399ebedacd6fad48b7248a833f4a3327cc"
+jhipster:
+  mail:
+    from: "report@example.com"
+server:
+  port: 26085
+spring:
+  datasource:
+    password: "{cipher}79aac12b8643d931dbe5759a92fa3756dba9d785c997f8740abc11eca68319a55284520d17301219fd212f1236852ff5"
+    url: "jdbc:sqlserver://localhost:1433;database=reportserver-v2;encrypt=false"
+    username: "{cipher}364a2da8f39f7eb99164efe1c359ac5f50e3cf8205e244133d7d1f5a40b0eda6fb4c1c556eb25587d5ca0b00093023e0"
+  mail:
+    host: "mail.example.com"
+    password: "{cipher}819048ada80563faf96272651c80f06722bc1a22e4549e5fd4302889028938c2"
+    port: 587
+    username: "{cipher}bbb94261f50957b163e14d5e7dd7e140f4cd3fa1cc6e653dc3ae94153578df70"
